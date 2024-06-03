@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --text-color: #edeef0;
+  --background-color: #111113;
+  --button-color: #212225;
+  --border-color: #5a6169;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  margin: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+button {
+  all: unset;
+  background-color: var(--button-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  margin: 0.5rem;
+  color: var(--text-color);
+  width: 6rem;
+  text-align: center;
+  font-size: 2rem;
+}
