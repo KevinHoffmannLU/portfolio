@@ -1,13 +1,18 @@
+import Intro from "./components/Intro";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+
 function App() {
   return (
     <>
-      <h1>Kevin Hoffmann</h1>
-      <div className="test">
-        <button>React</button>
-        <button>Sass</button>
-        <button>Radix</button>
-        <button>Next.js</button>
-      </div>
+      <Intro />
+
+      <Skills />
+
+      <Projects />
+
+      <Contact />
     </>
   );
 }
