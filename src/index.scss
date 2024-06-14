@@ -88,6 +88,47 @@ body {
     justify-content: center;
     gap: 2rem;
   }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+
+    background-color: #151d28;
+    width: 20vw;
+    height: 6rem;
+    border-top: 0.3rem solid var(--background-color);
+
+    &-link {
+      width: 15rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &-icon {
+        padding: 1rem 0;
+        font-size: 4rem;
+        height: 6rem;
+      }
+
+      &:hover {
+        background-color: #202e37;
+      }
+    }
+  }
+}
+
+.material-icons {
+  font-size: 4rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  &__title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 5rem;
+  }
 }
 
 // Utils
