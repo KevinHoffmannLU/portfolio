@@ -1,9 +1,35 @@
+import Alert from "./Alert";
+import { useState } from "react";
+
 export default function Main() {
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertText, setAlertText] = useState("");
+
+  const handleEmailClick = () => {
+    const email = "contact@hoffmannnkevin.com";
+    navigator.clipboard.writeText(email);
+    setAlertText("Email copied to clipboard");
+    setAlertVisible(true);
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 2000);
+  };
+
+  const handlePhoneClick = () => {
+    const phone = "+352 691 924 533";
+    navigator.clipboard.writeText(phone);
+    setAlertText("Phone number copied to clipboard");
+    setAlertVisible(true);
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 2000);
+  };
+
   return (
     <div className="main">
       <div className="main__container">
         <div className="main__container__name-container">
-          <p className="main__container__pre-name">hey there! I'm</p>
+          <p className="main__container__pre-name">Hey there! I'm</p>
           <h1 className="main__container__name">Kevin</h1>
           <p className="main__container__role">
             A <span className="blue">Web Developer</span> based out of
@@ -93,13 +119,18 @@ export default function Main() {
             </g>
           </svg>
         </a>
-        <a className="main__links-link">
+        <a className="main__links-link" onClick={handlePhoneClick}>
           <span className="material-icons main__links-link-icon">call</span>
         </a>
-        <a className="main__links-link" target="_blank">
+        <a
+          className="main__links-link"
+          target="_blank"
+          onClick={handleEmailClick}
+        >
           <span className="material-icons main__links-link-icon">email</span>
         </a>
       </div>
+      {alertVisible ? <Alert text={alertText} /> : null}
     </div>
   );
 }
