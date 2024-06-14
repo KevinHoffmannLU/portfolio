@@ -133,16 +133,33 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   background-color: #151d28;
   color: var(--text-color);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   position: absolute;
   bottom: 2rem;
   right: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.2rem solid #a4dddb;
+  border: 0.1rem solid #a4dddb;
+  transition: all 0.3s;
+  animation: fadeIn 2s;
+  opacity: 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .blue {
   color: #a4dddb;
 }/*# sourceMappingURL=index.css.map */
