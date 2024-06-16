@@ -130,7 +130,8 @@ export default function Main() {
           <span className="material-icons main__links-link-icon">email</span>
         </a>
       </div>
-      {alertVisible ? <Alert text={alertText} /> : null}
+      {alertVisible ? <Alert text={alertText} /> : null}{" "}
+      {/* have to fix bug where if multiple alters are clicked at one they disappear at random times */}
     </div>
   );
 }

@@ -125,7 +125,8 @@ body {
 
 .projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #172038;
   height: 100vh;
   width: 100vw;
@@ -138,6 +139,59 @@ body {
     background-color: var(--background-color);
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+  }
+}
+
+.project {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #253a5e;
+  border-radius: 1rem;
+  width: 50rem;
+  height: 70rem;
+  border: 0.1rem solid #1e1d39;
+
+  &__title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+
+  &__description {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 3rem 3rem 1rem 3rem;
+  }
+
+  &__stack {
+    margin-top: auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #10141f;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    &-skill {
+      height: 7rem;
+      width: 7rem;
+    }
   }
 }
 
