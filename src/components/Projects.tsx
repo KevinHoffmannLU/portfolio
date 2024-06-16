@@ -2,54 +2,59 @@ import { useRef, useEffect, useState } from "react";
 
 export default function Projects() {
   // Code to auto scroll to the projects section
-  // const projectsRef = useRef<HTMLDivElement | null>(null);
-  // const [isIntersecting, setIsIntersecting] = useState(false);
+  const projectsRef = useRef<HTMLDivElement | null>(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
-  // const handleScroll = () => {
-  //   setTimeout(() => {
-  //     projectsRef.current?.scrollIntoView({
-  //       block: "center",
-  //       behavior: "smooth",
-  //     });
-  //   }, 400);
-  // };
+  const handleScroll = () => {
+    setTimeout(() => {
+      projectsRef.current?.scrollIntoView({
+        block: "center",
+        behavior: "smooth",
+      });
+    }, 400);
+  };
 
-  // const disableScroll = () => {
-  //   document.body.style.overflow = "hidden";
-  // };
+  const disableScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
 
-  // const enableScroll = () => {
-  //   setTimeout(() => {
-  //     document.body.style.overflow = "auto";
-  //   }, 800);
-  // };
+  const enableScroll = () => {
+    setTimeout(() => {
+      document.body.style.overflow = "auto";
+    }, 800);
+  };
 
-  // useEffect(() => {
-  //   if (isIntersecting) {
-  //     disableScroll();
-  //     handleScroll();
-  //     enableScroll();
-  //   }
-  // }, [isIntersecting]);
+  useEffect(() => {
+    if (isIntersecting) {
+      disableScroll();
+      handleScroll();
+      enableScroll();
+    }
+  }, [isIntersecting]);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entires) => {
-  //       const entry = entires[0];
-  //       setIsIntersecting(entry.isIntersecting);
-  //     },
-  //     { threshold: 0.01 }
-  //   );
-  //   observer.observe(projectsRef.current!);
-  // }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entires) => {
+        const entry = entires[0];
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { threshold: 0.01 }
+    );
+    observer.observe(projectsRef.current!);
+  }, []);
   // ref={projectsRef} onClick={handleScroll} add this to projects div for it to work
 
   return (
-    <div className="projects">
+    <div className="projects" ref={projectsRef} onClick={handleScroll}>
       <h2 className="projects__title">Here are some of my Projects</h2>
       <div className="projects__container">
         <div className="project">
-          <img className="project__img" src="https://via.placeholder.com/300" />
+          <div className="project__img">
+            <img
+              className="project__img-img"
+              src="https://via.placeholder.com/300"
+            />
+          </div>
           <h3 className="project__title">MyBooks</h3>
           <p className="project__description">
             A simple website that allows me to keep track of the books I
@@ -76,22 +81,6 @@ export default function Projects() {
               </svg>
             </div>
           </div>
-        </div>
-        <div className="project">
-          <img className="project__img" src="https://via.placeholder.com/300" />
-          <h3 className="project__title">Project 1</h3>
-          <p className="project__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          </p>
-          <div className="project__stack"></div>
-        </div>
-        <div className="project">
-          <img className="project__img" src="https://via.placeholder.com/300" />
-          <h3 className="project__title">Project 1</h3>
-          <p className="project__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          </p>
-          <div className="project__stack"></div>
         </div>
       </div>
     </div>

@@ -112,20 +112,16 @@ body::-webkit-scrollbar {
 .projects {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #172038;
+  background-color: var(--background-color);
   height: 100vh;
   width: 100vw;
 }
 .projects__title {
   font-size: 4rem;
-  font-weight: 500;
-  padding: 2rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: var(--background-color);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  padding: 4rem;
+  width: 100vw;
+  text-align: center;
+  text-decoration: underline;
 }
 .projects__container {
   display: flex;
@@ -134,41 +130,52 @@ body::-webkit-scrollbar {
 }
 
 .project {
-  margin-top: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #253a5e;
-  border-radius: 1rem;
-  width: 50rem;
-  height: 70rem;
-  border: 0.1rem solid #1e1d39;
+  background-color: #151d28;
+  margin-top: 2rem;
+  width: 150rem;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  border: 0.1rem solid #151d28;
 }
 .project__title {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 3rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 4rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid #394a50;
 }
 .project__description {
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 3rem;
+  font-size: 2rem;
+  border-bottom: 0.1rem solid #394a50;
 }
 .project__img {
-  margin: 3rem 3rem 1rem 3rem;
-}
-.project__stack {
-  margin-top: auto;
+  grid-column: 2/-1;
+  grid-row: 1/-1;
   display: flex;
-  gap: 3rem;
   justify-content: center;
   align-items: center;
-  height: 10rem;
-  width: 100%;
+}
+.project__img-img {
+  width: 51.2rem;
+  height: 28.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project__stack {
+  grid-column: 1/2;
+  grid-row: 3/-1;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
   padding: 2rem;
-  background-color: #10141f;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  padding-left: 3rem;
 }
 .project__stack-skill {
   height: 7rem;
