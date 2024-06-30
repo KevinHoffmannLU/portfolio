@@ -252,26 +252,30 @@ body {
   align-items: center;
   border: 0.1rem solid #a4dddb;
   transition: all 0.3s;
-  animation: fadeIn 2s;
-  opacity: 0;
+  // animation: fadeIn 2s;
+  opacity: 1;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+//   25% {
+//     opacity: 1;
+//   }
+//   75% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
 
 // Utils
 .blue {
   color: #a4dddb;
+}
+
+.no-display {
+  display: none;
 }

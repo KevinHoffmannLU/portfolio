@@ -1,30 +1,43 @@
 import Alert from "./Alert";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Main() {
-  const [alertVisible, setAlertVisible] = useState(false);
-  const [alertText, setAlertText] = useState("");
+  // const [alertText, setAlertText] = useState<string>();
+  // const [time, setTime] = useState(new Date());
 
-  const handleEmailClick = () => {
-    const email = "contact@hoffmannnkevin.com";
-    navigator.clipboard.writeText(email);
-    setAlertText("Email copied to clipboard");
-    setAlertVisible(true);
-    setTimeout(() => {
-      setAlertVisible(false);
-    }, 2000);
-  };
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTime(time + 1);
+  //   }, 1000);
+  //   return () => clearInterval(interval);
+  // }, [time]);
 
-  const handlePhoneClick = () => {
-    const phone = "+352 691 924 533";
-    navigator.clipboard.writeText(phone);
-    setAlertText("Phone number copied to clipboard");
-    setAlertVisible(true);
-    setTimeout(() => {
-      setAlertVisible(false);
-    }, 2000);
-  };
+  // const handleEmailClick = () => {
+  //   const email = "contact@hoffmannnkevin.com";
+  //   navigator.clipboard.writeText(email);
+  //   // setAlertText([...alertText, "Email copied to clipboard"]);
+  //   // setTimeout(() => {
+  //   //   setAlertText(alertText.slice(1));
+  //   // }, 2000);
+  //   setAlertText("Email copied to clipboard");
+  //   setTime(3);
+  // };
 
+  // const handlePhoneClick = () => {
+  //   const phone = "+352 691 924 533";
+  //   navigator.clipboard.writeText(phone);
+  //   // setAlertText([...alertText, "Phone number copied to clipboard"]);
+  //   // setTimeout(() => {
+  //   //   setAlertText(alertText.slice(1));
+  //   // }, 2000);
+  //   setAlertText("Phone number copied to clipboard");
+  // };
+
+  // const clearAlert = () => {
+  //   setAlertText("");
+  // };
+
+  // console.log(alertText);
   return (
     <div className="main">
       <div className="main__container">
@@ -119,18 +132,25 @@ export default function Main() {
             </g>
           </svg>
         </a>
-        <a className="main__links-link" onClick={handlePhoneClick}>
+        {/* onClick={handlePhoneClick} */}
+        <a className="main__links-link">
           <span className="material-icons main__links-link-icon">call</span>
         </a>
         <a
           className="main__links-link"
           target="_blank"
-          onClick={handleEmailClick}
+          // onClick={handleEmailClick}
         >
           <span className="material-icons main__links-link-icon">email</span>
         </a>
       </div>
-      {alertVisible ? <Alert text={alertText} /> : null}{" "}
+      {/* {alertVisible ? <Alert text={alertText} /> : null} */}
+      {/* {alertText &&
+        alertText.length > 0 &&
+        alertText.map((text, index) => {
+          return <Alert key={new Date().getTime()} text={text} top={index} />;
+        })} */}
+      {/* {alertText && <Alert text={alertText} />} */}
       {/* have to fix bug where if multiple alters are clicked at one they disappear at random times */}
     </div>
   );
