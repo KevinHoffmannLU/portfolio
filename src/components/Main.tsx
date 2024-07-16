@@ -1,18 +1,26 @@
 export default function Main() {
+  const linksLink =
+    "w-[15rem] text-center cursor-pointer transition-all-[0.3s] flex justify-center items-center hover:bg-[#202e37]";
+
+  const linkIcon = "py-[1rem] text-[4rem] h-[6rem]";
+
   return (
-    <div className="main">
-      <div className="main__container">
-        <div className="main__container__name-container">
-          <p className="main__container__pre-name">Hey there! I'm</p>
-          <h1 className="main__container__name">Kevin</h1>
-          <p className="main__container__role">
-            A <span className="blue">Web Developer</span> based out of
+    <div className="bg-bg-body h-screen w-screen flex flex-col items-center justify-center">
+      <div className="flex justify-center gap-[10rem]">
+        <div className="flex flex-wrap items-start w-[80rem]">
+          <p className="pt-[11rem] text-[5rem] opacity-50">Hey there! I'm</p>
+          <h1 className="ml-[1.2rem] text-[15rem]">Kevin</h1>
+          <p className="text-[6rem]">
+            A <span className="text-[#a4dddb]">Web Developer</span> based out of
             Luxembourg
           </p>
         </div>
-        <img className="main__container__img" src="./src/temp/4.jpg" />
+        <img
+          className="w-[40rem] h-[40rem] object-cover rounded-[1rem]"
+          src="./src/temp/4.jpg"
+        />
       </div>
-      <div className="main__skills">
+      <div className="w-[80vw] h-[10rem] p-[1rem] mt-[7rem] bg-[#151d28] rounded-[1rem] flex justify-center gap-[2rem]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
           <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
           <path
@@ -52,14 +60,14 @@ export default function Main() {
           <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z" />
         </svg>
       </div>
-      <div className="main__links">
+      <div className="flex justify-center bg-[#151d28] w-[20vw] h-[6rem] border-t-[0.3rem] border-bg-body border-solid">
         <a
-          className="main__links-link"
+          className={linksLink}
           href="https://www.linkedin.com/in/kevinhoffmannlu/"
           target="_blank"
         >
           <svg
-            className="main__links-link-icon"
+            className={linkIcon}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 128"
           >
@@ -74,12 +82,12 @@ export default function Main() {
           </svg>
         </a>
         <a
-          className="main__links-link"
+          className={linksLink}
           href="https://github.com/KevinHoffmannLU"
           target="_blank"
         >
           <svg
-            className="main__links-link-icon"
+            className={linkIcon}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 128"
           >
@@ -94,11 +102,19 @@ export default function Main() {
           </svg>
         </a>
 
-        <a className="main__links-link">
-          <span className="material-icons main__links-link-icon">call</span>
+        <a className={linksLink}>
+          <span
+            className={`material-icons ${linkIcon} text-[4rem] text-[##ebede9]`}
+          >
+            call
+          </span>
         </a>
-        <a className="main__links-link" target="_blank">
-          <span className="material-icons main__links-link-icon">email</span>
+        <a className={linksLink} target="_blank">
+          <span
+            className={`material-icons ${linkIcon} text-[4rem] text-[##ebede9]`}
+          >
+            email
+          </span>
         </a>
       </div>
     </div>
