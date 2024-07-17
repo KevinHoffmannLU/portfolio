@@ -5,7 +5,7 @@ export default function Main() {
   const linkIcon = "py-[1rem] text-[4rem] h-[6rem]";
 
   return (
-    <div className="bg-bg-body h-screen w-screen flex flex-col items-center justify-center">
+    <div className="bg-[#10141f] h-screen w-screen flex flex-col items-center justify-center">
       <div className="flex justify-center gap-[10rem]">
         <div className="flex flex-wrap items-start w-[80rem]">
           <p className="pt-[11rem] text-[5rem] opacity-50">Hey there! I'm</p>
@@ -60,7 +60,7 @@ export default function Main() {
           <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z" />
         </svg>
       </div>
-      <div className="flex justify-center bg-[#151d28] w-[20vw] h-[6rem] border-t-[0.3rem] border-bg-body border-solid">
+      <div className="flex justify-center bg-[#151d28] w-[20vw] h-[6rem] border-t-[0.3rem] border-bg-body border-solid border-[#10141f]">
         <a
           className={linksLink}
           href="https://www.linkedin.com/in/kevinhoffmannlu/"
