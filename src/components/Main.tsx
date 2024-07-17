@@ -1,8 +1,13 @@
+import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/ui/button";
+
 export default function Main() {
   const linksLink =
     "w-[15rem] text-center cursor-pointer transition-all-[0.3s] flex justify-center items-center hover:bg-[#202e37]";
 
   const linkIcon = "py-[1rem] text-[4rem] h-[6rem]";
+
+  const { toast } = useToast();
 
   return (
     <div className="bg-[#10141f] h-screen w-screen flex flex-col items-center justify-center">
@@ -102,20 +107,40 @@ export default function Main() {
           </svg>
         </a>
 
-        <a className={linksLink}>
+        <button
+          className={linksLink}
+          onClick={() => {
+            toast({
+              title: "Phone Number copied to clipboard",
+              variant: "custom",
+              duration: 2000,
+            });
+            navigator.clipboard.writeText("+352 691 924 533");
+          }}
+        >
           <span
             className={`material-icons ${linkIcon} text-[4rem] text-[##ebede9]`}
           >
             call
           </span>
-        </a>
-        <a className={linksLink} target="_blank">
+        </button>
+        <button
+          className={linksLink}
+          onClick={() => {
+            toast({
+              title: "Email copied to clipboard",
+              variant: "custom",
+              duration: 2000,
+            });
+            navigator.clipboard.writeText("contact@hoffmannkevin.com");
+          }}
+        >
           <span
             className={`material-icons ${linkIcon} text-[4rem] text-[##ebede9]`}
           >
             email
           </span>
-        </a>
+        </button>
       </div>
     </div>
   );
