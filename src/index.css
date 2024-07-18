@@ -92,3 +92,11 @@ body::-webkit-scrollbar {
     @apply bg-background text-foreground;
   }
 }
+
+/* :root {
+  --text-color: #ebede9;
+  --background-color: #10141f;
+  --card-color: #18191b;
+  --button-color: #212225;
+  --border-color: #5a6169;
+} */
