@@ -4,8 +4,10 @@ import {
   MobileIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
+import { useToast } from "./ui/use-toast";
 
 export default function Links() {
+  const { toast } = useToast();
   const linkStyle =
     "w-[15rem] text-center cursor-pointer transition-all-[0.3s] flex justify-center items-center hover:bg-[#202e37]";
 
@@ -26,10 +28,30 @@ export default function Links() {
         <GitHubLogoIcon className="w-[4rem] h-[4rem]" />
       </a>
 
-      <button className={linkStyle}>
+      <button
+        className={linkStyle}
+        onClick={() => {
+          navigator.clipboard.writeText("+352 691 924 533");
+          toast({
+            title: "Phone Number copied to clipboard",
+            variant: "custom",
+            duration: 1500,
+          });
+        }}
+      >
         <MobileIcon className="w-[4rem] h-[4rem]" />
       </button>
-      <button className={linkStyle}>
+      <button
+        className={linkStyle}
+        onClick={() => {
+          navigator.clipboard.writeText("contact@hoffmannkevin.com");
+          toast({
+            title: "Email copied to clipboard",
+            variant: "custom",
+            duration: 1500,
+          });
+        }}
+      >
         <EnvelopeClosedIcon className="w-[4rem] h-[4rem]" />
       </button>
     </section>
