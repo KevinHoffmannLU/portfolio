@@ -5,7 +5,7 @@ import ProjectTitle from "./ProjectTitle";
 
 export default function Projects() {
   return (
-    <div className="h-screen w-screen p-12 bg-gray-900 grid grid-cols-6 grid-rows-2">
+    <div className="h-[90rem] w-screen p-12 bg-gray-900 grid grid-cols-6 grid-rows-2 gap-3">
       <ProjectTitle />
       <CogniBrain />
       <MyBooks />
