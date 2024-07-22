@@ -15,7 +15,7 @@ export default function Intro() {
       </div>
       <img
         className="w-[40rem] h-[40rem] object-cover rounded-[1rem]"
-        src="/public/images/kevin.jpg"
+        src="public/images/kevin.jpg"
       />
     </section>
   );
