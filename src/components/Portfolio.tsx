@@ -7,13 +7,14 @@ export default function Portfolio() {
         showcases my personal projects, skills, and experience.
       </p>
       <div className="mt-auto flex h-[5rem] w-[8rem]">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
       </div>
       <img
         src="src/temp/portfolio.png"
         alt="Portfolio"
-        className=" h-[30rem] object-cover rounded-lg absolute top-[15%] right-12"
+        className=" h-[30rem] w-[60rem] object-cover rounded-lg absolute top-[12%] right-12"
       />
     </section>
   );

@@ -14,7 +14,7 @@ export default function MyBooks() {
       <img
         src="src/temp/my-books.png"
         alt="CogniBrain"
-        className=" h-[30rem] object-cover rounded-lg absolute top-[15%] right-12"
+        className=" h-[30rem] w-[60rem] object-cover rounded-lg absolute top-[12%] right-12"
       />
     </section>
   );

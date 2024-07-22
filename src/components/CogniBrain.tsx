@@ -1,6 +1,6 @@
 export default function CogniBrain() {
   return (
-    <section className="col-start-3 col-end-7 row-start-1 row-end-2 bg-black/10 p-10">
+    <section className="col-start-3 col-end-7 row-start-1 row-end-2 bg-black/10 p-10 flex justify-center items-center">
       {/* <div className="flex gap-4">
         <h1 className="text-[5rem]">CogniBrain</h1>
         <img
@@ -10,6 +10,7 @@ export default function CogniBrain() {
         />
       </div>
       <p>Some text about CogniBrain</p> */}
+      <h1 className="text-[2.5rem]">Work in Progress...</h1>
     </section>
   );
 }
