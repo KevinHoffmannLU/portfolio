@@ -12,7 +12,7 @@ export default function Portfolio() {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
       </div>
       <img
-        src="../temp/portfolio.png"
+        src="./src/temp/portfolio.png"
         alt="Portfolio"
         className=" h-[30rem] w-[60rem] object-cover rounded-lg absolute top-[12%] right-12"
       />
