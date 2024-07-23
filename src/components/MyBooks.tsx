@@ -11,11 +11,17 @@ export default function MyBooks() {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
       </div>
-      <img
-        src="/images/my-books.png"
-        alt="CogniBrain"
-        className=" h-[30rem] w-[60rem] object-cover rounded-lg absolute top-[12%] right-12"
-      />
+      <a
+        href="https://kevinhoffmannlu.github.io/MyBooks/"
+        target="_blank"
+        className="lg:h-[30rem] lg:w-[60rem] absolute top-[12%] right-12 rounded-lg overflow-hidden"
+      >
+        <img
+          src="/images/my-books.png"
+          alt="CogniBrain"
+          className="object-cover "
+        />
+      </a>
     </section>
   );
 }
