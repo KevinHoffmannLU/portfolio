@@ -31,7 +31,7 @@ function Button({
   return (
     <button
       onClick={() => onClick(name)}
-      className={`text-[2rem] px-10 py-2 rounded-full ${
+      className={`text-[2rem] 2k:text-[2.4rem] px-10 py-2 rounded-full ${
         name === view ? "text-[#a4dddb] bg-[#1f273c]" : "bg-[#10141f]"
       }`}
     >

@@ -1,5 +1,5 @@
 import Main from "./components/Main";
-import Projects from "./components/Projects";
+import View from "./components/View";
 // import Contact from "./components/Contact";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -10,7 +10,9 @@ function App() {
 
       <Toaster />
 
-      <Projects />
+      <div className="hidden 1.5k:block">
+        <View />
+      </div>
 
       {/* <Contact /> */}
     </>

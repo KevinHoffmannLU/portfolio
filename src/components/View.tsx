@@ -5,7 +5,7 @@ import Work from "./Work";
 
 type TView = "work" | "about";
 
-export default function Projects() {
+export default function View() {
   const [view, setView] = useState<TView>("work");
 
   return (
