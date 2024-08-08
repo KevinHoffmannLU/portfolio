@@ -72,10 +72,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       screens: {
-        "1k": { min: "1000px" },
-        "1.4k": { min: "1400px" },
+        "1.5k": { min: "1500px" },
         "2k": { min: "2000px" },
-        "2.4k": { min: "2400px" },
       },
     },
   },
