@@ -1,6 +1,6 @@
-import Intro from "./Intro";
-import Links from "./Links";
-import Skills from "./Skills";
+import Intro from "./main/Intro";
+import Links from "./main/Links";
+import Skills from "./main/Skills";
 
 export default function Main() {
   return (

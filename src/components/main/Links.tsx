@@ -4,7 +4,7 @@ import {
   MobileIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
-import { useToast } from "./ui/use-toast";
+import { useToast } from "../ui/use-toast";
 
 export default function Links() {
   const { toast } = useToast();
