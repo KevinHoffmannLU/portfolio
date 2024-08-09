@@ -10,7 +10,7 @@ export default function ViewButtons({
   };
 
   return (
-    <section className="bg-[#10141f] mt-[5rem] flex gap-5 px-4 py-2 rounded-full">
+    <section className="bg-[#10141f] mt-[5rem] 2k:mt-[6.25rem] flex gap-5 2k:gap-[1.56rem] px-4 2k:px-[1.25rem] py-2 2k:py-[0.625rem] rounded-full">
       <Button view={view} onClick={onClick} name="work" />
       <Button view={view} onClick={onClick} name="about" />
     </section>
@@ -31,7 +31,7 @@ function Button({
   return (
     <button
       onClick={() => onClick(name)}
-      className={`text-[2rem] 2k:text-[2.4rem] px-10 py-2 rounded-full ${
+      className={`text-[2rem] 2k:text-[2.5rem] px-10 2k:px-[3.125rem] py-2 2k:py-[0.625rem] rounded-full ${
         name === view ? "text-[#a4dddb] bg-[#1f273c]" : "bg-[#10141f]"
       }`}
     >

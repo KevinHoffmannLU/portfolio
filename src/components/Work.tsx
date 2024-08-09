@@ -1,6 +1,6 @@
 export default function Work() {
   return (
-    <section className="w-[94vw] h-[80vh] 2k:h-[85vh] bg-[#10141f] mt-12 flex items-center justify-center gap-[10rem] p-10 rounded-lg">
+    <section className="w-[94vw] h-[75.5rem] 2k:h-[94.375rem] bg-[#10141f] mt-12 2k:mt-[8rem] flex items-center justify-center gap-[10rem] 2k:gap-[12.5rem] p-10 2k:p-[3.125rem] rounded-lg">
       <Project project={myBooks} />
       <Project project={ravenMap} />
       <Project project={portfolio} />
@@ -20,17 +20,21 @@ type TProject = {
 };
 
 function Project({ project }: { project: TProject }) {
-  const imgSize = "w-[6rem] h-[6rem]";
+  const imgSize = "w-[6rem] h-[6rem] 2k:w-[7.5rem] 2k:h-[7.5rem]";
 
   return (
-    <section className="p-12 pb-0 flex flex-col items-center w-[70rem] h-full bg-black/10">
-      <h1 className="text-[4.5rem] text-center">{project.title}</h1>
-      <p className="text-[1.7rem] mt-12 w-full">{project.description}</p>
-      <div className="w-full flex gap-10">
-        <p className="text-[1.5rem] mt-5">
+    <section className="p-12 2k:p-[3.75rem] pb-0 flex flex-col items-center w-[70rem] 2k:2-[87.5rem] h-full bg-black/10">
+      <h1 className="text-[4.5rem] 2k:text-[5.625rem] text-center">
+        {project.title}
+      </h1>
+      <p className="text-[1.7rem] 2k:text-[2.125rem] mt-12 2k:mt-[3.75rem] w-full">
+        {project.description}
+      </p>
+      <div className="w-full flex gap-10 2k:gap-[3.125rem]">
+        <p className="text-[1.5rem] 2k:text-[1.875rem] mt-5 2k:mt-[1.56rem]">
           {project.features ? "Features:" : ""}
         </p>
-        <ul className="mt-5 text-[1.5rem] list-disc">
+        <ul className="mt-5 text-[1.5rem] 2k:text-[1.875rem] list-disc">
           {project.features?.map((feature: string) => (
             <li className="">{feature}</li>
           ))}
@@ -44,10 +48,10 @@ function Project({ project }: { project: TProject }) {
         <img
           src={project.img}
           alt="CogniBrain"
-          className="object-cover w-[45rem] h-[25rem]"
+          className="object-cover w-[45rem] 2k:w-[56.25rem] h-[25rem] 2k:h-[31.25rem]"
         />
       </a>
-      <section className="mt-auto flex justify-left gap-[3rem] w-full h-[8rem]">
+      <section className="mt-auto flex justify-left gap-[3rem] 2k:gap-[3.75rem] w-full h-[8rem] 2k:h-[10rem]">
         {project.tech.map((tech: string) => (
           <img className={imgSize} src={tech} />
         ))}
