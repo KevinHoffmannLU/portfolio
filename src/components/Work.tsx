@@ -80,7 +80,7 @@ const ravenMap = {
     "Raven map is a webapp that allows users to capture, organize and work with all the information that passes them in their day to day lives, built in Next.js. It focuses on the interlinkedness of information and building systems to simplify life,  in a minimal and nice to use fashion.",
   img: "/images/raven-map.png",
   links: {
-    page: "https://ravenmap.com/",
+    page: "https://www.ravenmap.com/",
   },
   tech: [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
