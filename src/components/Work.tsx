@@ -64,7 +64,6 @@ const myBooks = {
   title: "MyBooks",
   description:
     "MyBooks is a simple website made in vanilla JavaScript that helps me keep track of my book collection.",
-  features: ["Search through books", "Switch between categories"],
   img: "/images/my-books.png",
   links: {
     page: "https://kevinhoffmannlu.github.io/MyBooks/",
@@ -78,11 +77,10 @@ const myBooks = {
 const ravenMap = {
   title: "RavenMap",
   description:
-    "MyBooks is a simple website made in vanilla JavaScript that helps me keep track of my book collection.",
-  features: ["Search through books", "Switch between categories"],
-  img: "/images/my-books.pn",
+    "Raven map is a webapp that allows users to capture, organize and work with all the information that passes them in their day to day lives, built in Next.js. It focuses on the interlinkedness of information and building systems to simplify life,  in a minimal and nice to use fashion.",
+  img: "/images/raven-map.png",
   links: {
-    page: "https://kevinhoffmannlu.github.io/MyBooks/",
+    page: "https://ravenmap.com/",
   },
   tech: [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
@@ -95,7 +93,7 @@ const ravenMap = {
 const portfolio = {
   title: "Portfolio",
   description:
-    "A simple website made in React to link to my socials and show my work.",
+    "A simple website made in React to introduce myself and show my work.",
   img: "/images/portfolio.png",
   links: {
     page: "https://hoffmannkevin.com/",
