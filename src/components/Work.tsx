@@ -30,7 +30,7 @@ function Project({ project }: { project: TProject }) {
       <p className="text-[1.7rem] 2k:text-[2.125rem] mt-12 2k:mt-[3.75rem] w-full">
         {project.description}
       </p>
-      <div className="w-full flex gap-10 2k:gap-[3.125rem]">
+      {/* <div className="w-full flex gap-10 2k:gap-[3.125rem]">
         <p className="text-[1.5rem] 2k:text-[1.875rem] mt-5 2k:mt-[1.56rem]">
           {project.features ? "Features:" : ""}
         </p>
@@ -39,11 +39,11 @@ function Project({ project }: { project: TProject }) {
             <li className="">{feature}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <a
         href={project.links.page}
         target="_blank"
-        className="mt-auto rounded-lg overflow-hidden"
+        className="mt-auto rounded-lg overflow-hidden border-[#000] border-[2px]"
       >
         <img
           src={project.img}
