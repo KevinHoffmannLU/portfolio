@@ -5,14 +5,14 @@ export default function About() {
     <section className="w-[94vw] h-[75.5rem] 2k:h-[94.375rem] bg-[#10141f] mt-12 2k:mt-[8rem] p-12 2k:p-[3.75rem] px-[20rem] 2k:px-[25rem] flex flex-col text-[2rem] 2k:text-[2.5rem]">
       <h1 className="text-[4.5rem] 2k:text-[5.6rem] text-center">About Me</h1>
       <p className="mt-12 2k:mt-[3.75rem] w-full text-center">
-        I have always like the idea of being a programmer some day and still
-        fondly remember coding my first shell script when I was 8 years old.
-        Although I never did really pursue the skill, it was always in the back
-        of my mind.
+        I have always liked the idea of being a programmer some day and still
+        fondly remember coding my first batch script when I was 8 years old.
+        Although I never did really pursue the skill, it always lingered in the
+        back of my mind.
       </p>
       <p className="mt-12 2k:mt-[3.75rem] w-full text-center">
         Later in life, while working as a fast food worker, I decided to try out
-        CS50 while on my annual leave and I realized that Software Developement
+        CS50x while on my annual leave and I realized that Software Developement
         was something I wanted to pursue more seriously. So a couple of months
         later I handed in my resignation and dived straight into teaching my
         self all I could about the craft.
